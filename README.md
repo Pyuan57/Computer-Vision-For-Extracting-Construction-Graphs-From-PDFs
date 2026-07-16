@@ -20,7 +20,6 @@ Latest source code (GitHub): **https://github.com/Pyuan57/Computer-Vision-For-Ex
 | Google Colab (recommended for training) | — | https://colab.research.google.com/ |
 | Roboflow (dataset annotation & augmentation) | — | https://roboflow.com/ |
 | Label Studio (OCR ground-truth annotation) | — | https://labelstud.io/ |
-| Git | — | https://git-scm.com/downloads |
 
 Model training was performed on Google Colab using a GPU runtime (Nvidia Tesla T4). For local inference and OCR evaluation, a machine with at least 16 GB RAM and a dedicated GPU (e.g., NVIDIA GTX 1650 Ti or better) is recommended.
 
@@ -164,8 +163,3 @@ OCR model: EasyOCR (CRAFT detector + CRNN/BiLSTM recognizer + CTC decoder), pret
 - **OCR:** Character Error Rate (CER) and Word Error Rate (WER), computed at three stages (no preprocessing / preprocessed / postprocessed) against Label Studio ground-truth annotations.
 
 ---
-
-## 6. Notes
-
-- Exact random seed values and pinned library versions were not recorded during original development; for strict reproducibility, fix and document a seed for dataset splitting, SMOTE sampling, and model initialisation.
-- Full methodological detail for every step above is documented in Chapter 3 (Methodology and Experimental Setup) of the accompanying project report, and referenced throughout the Researcher Manual.
